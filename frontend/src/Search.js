@@ -161,9 +161,9 @@ class Search extends React.Component {
                   />
                   <h4>{result.title}</h4>
                   <h5 className="text">Condition: {result.condition}</h5>
-                  <h6 lassName="text">
+                  <h5 lassName="text">
                     Price: {result.currency_id} ${result.price}
-                  </h6>
+                  </h5>
                   <h6 lassName="text">
                     {this.getStock(result.available_quantity)}
                   </h6>
