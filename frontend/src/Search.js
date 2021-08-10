@@ -140,7 +140,12 @@ class Search extends React.Component {
         condition: e.target.value,
       },
       () => {
-        this.fetchSearchResults(1, this.state.query, "", this.state.condition);
+        this.fetchSearchResults(
+          1,
+          this.state.query,
+          this.state.sort,
+          this.state.condition
+        );
       }
     );
   };
